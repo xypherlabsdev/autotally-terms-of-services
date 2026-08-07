@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service · AutoTally</title>
+<meta name="description" content="The terms you agree to when you use AutoTally, the expense tracker that reads your bank alerts on-device.">
+<meta name="robots" content="index, follow">
+<!-- Self-contained by design: no web fonts, no CDN, no analytics, no cookies. -->
+<style>
+  :root {
+    --primary: #2D6CDF;
+    --primary-bright: #3B82F6;
+    --accent: #7C5CFC;
+    --ink: #1F3A5F;
+    --surface: #F7F9FC;
+    --card: #FFFFFF;
+    --text-secondary: #5B6B7F;
+    --text-muted: #9AA8BC;
+    --outline: #E1E8F2;
+    --tint-blue: #E8F0FF;
+    --tint-green: #E7F4EF;
+    --tint-amber: #FFF3E4;
+    --income: #1B7A5A;
+    --radius: 20px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--surface);
+    color: var(--text-secondary);
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .hero {
+    background: linear-gradient(160deg, #EAF1FF 0%, var(--surface) 62%);
+    padding: 56px 22px 40px;
+  }
+
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.2px;
+    font-size: 18px;
+  }
+
+  .mark .tile {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+    background: linear-gradient(135deg, var(--primary-bright), var(--primary));
+    box-shadow: 0 6px 16px rgba(45, 108, 223, 0.32);
+  }
+
+  h1 {
+    color: var(--ink);
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+    margin: 26px 0 10px;
+    font-weight: 800;
+  }
+
+  .dates { color: var(--text-muted); font-size: 14px; margin: 0; }
+
+  main { padding: 0 22px 72px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--outline);
+    border-radius: var(--radius);
+    padding: 26px 26px 6px;
+    margin: 0 0 22px;
+    box-shadow: 0 10px 28px rgba(31, 58, 95, 0.05);
+  }
+
+  .card.summary {
+    background: var(--tint-blue);
+    border-color: #D2E2FF;
+    padding-bottom: 22px;
+  }
+
+  .card.summary h2 { margin-top: 0; }
+
+  .card.summary ul { margin-bottom: 0; }
+
+  h2 {
+    color: var(--ink);
+    font-size: 21px;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin: 30px 0 10px;
+    font-weight: 800;
+  }
+
+  .card > h2:first-child { margin-top: 4px; }
+
+  h3 { color: var(--ink); font-size: 16px; margin: 22px 0 6px; font-weight: 700; }
+
+  p { margin: 0 0 14px; }
+
+  ul { margin: 0 0 16px; padding-left: 22px; }
+
+  li { margin-bottom: 8px; }
+
+  strong { color: var(--ink); font-weight: 700; }
+
+  a { color: var(--primary); text-decoration: none; font-weight: 600; }
+
+  a:hover { text-decoration: underline; }
+
+  .warn {
+    background: var(--tint-amber);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin: 0 0 18px;
+    font-size: 15px;
+  }
+
+  .warn strong { color: #B26A00; }
+
+  .note {
+    background: var(--tint-green);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin: 0 0 18px;
+    font-size: 15px;
+  }
+
+  .note strong { color: var(--income); }
+
+  footer {
+    border-top: 1px solid var(--outline);
+    padding: 28px 22px 44px;
+    color: var(--text-muted);
+    font-size: 14px;
+    text-align: center;
+  }
+
+  footer a { color: var(--text-secondary); }
+
+  @media (max-width: 560px) {
+    .hero { padding: 40px 18px 30px; }
+    h1 { font-size: 30px; }
+    main { padding: 0 18px 56px; }
+    .card { padding: 20px 18px 4px; }
+    body { font-size: 15.5px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="mark"><span class="tile" aria-hidden="true"></span> AutoTally</div>
+    <h1>Terms of Service</h1>
+    <p class="dates">Effective 7 August 2026 · Last updated 7 August 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card summary">
+    <h2>The short version</h2>
+    <ul>
+      <li><strong>AutoTally is a record-keeping tool, not a bank.</strong> It cannot move money, pay anyone or connect to your bank.</li>
+      <li><strong>Auto-capture can be wrong.</strong> It reads alerts and may miss, duplicate or misread one. Your bank statement is the source of truth.</li>
+      <li><strong>Nothing here is financial advice.</strong></li>
+      <li><strong>Your data lives on your device</strong>, so keeping it safe — and backed up — is your responsibility.</li>
+      <li><strong>The app is free and supported by advertising.</strong></li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>1. Agreement to these terms</h2>
+    <p>These Terms of Service (“Terms”) form an agreement between you and <strong>XypherLabs</strong> (“we”, “us”) governing your use of the AutoTally Android application (“the app”). By downloading, installing or using the app you accept these Terms. If you do not accept them, do not use the app.</p>
+    <p>Your use is also governed by our <a href="privacy-policy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Who may use the app</h2>
+    <p>You must be at least 13 years old — or at least the age of digital consent in your country, which is up to 16 in parts of the European Economic Area — to use the app. If you are under the age of majority where you live, you must have your parent or guardian’s permission.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Licence</h2>
+    <p>We grant you a personal, non-exclusive, non-transferable, revocable licence to install and use the app on devices you own or control, for your own personal money tracking.</p>
+    <p>You agree not to: resell, rent, sublicense or redistribute the app; reverse engineer, decompile or disassemble it except where that restriction is prohibited by law; remove or obscure any notices in it; interfere with its advertising; or use it to break any law.</p>
+  </section>
+
+  <section class="card">
+    <h2>4. What the app is — and what it is not</h2>
+    <p>AutoTally records and organises spending. It reads the transaction alerts your bank, card and payment apps post to your phone, parses them on your device, and turns them into a ledger you can categorise, budget against and export.</p>
+    <div class="warn">
+      <p style="margin:0"><strong>AutoTally is not a bank, a payment service or a financial institution.</strong> It cannot make payments, transfer money, cancel a charge, stop a mandate or contact your bank on your behalf. It has no connection to your bank account and never asks for banking credentials. Anything shown in the app is a record of what you or auto-capture entered — it is not a bank statement and has no effect on your actual accounts.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>5. Auto-capture is an assistant, not an authority</h2>
+    <p>Auto-capture is automated pattern matching over notification text. It works well for many banks and formats, and imperfectly for others. Transactions may be:</p>
+    <ul>
+      <li><strong>missed</strong> — if your bank sends no alert, sends it in a language or format the app does not read, or the system stops the app in the background;</li>
+      <li><strong>duplicated</strong> — where a bank and a payment app both announce the same charge;</li>
+      <li><strong>misread</strong> — wrong amount, wrong merchant, wrong direction or wrong category;</li>
+      <li><strong>captured in error</strong> — from a message that resembles a transaction alert but is not one.</li>
+    </ul>
+    <p>Captures the app is not confident about are held in a review queue for you to confirm or discard, and do not affect balances until you do. Even so, <strong>you are responsible for checking what the app records</strong>. Always treat your bank or card statement as the source of truth, and never rely on AutoTally for reconciliation, tax filing or any purpose where accuracy is critical.</p>
+    <p>Auto-capture also begins only when you enable it. It cannot see transactions or messages from before that point.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. Not financial advice</h2>
+    <p>Budgets, goals, insights, trends and any other figure or suggestion in the app are informational summaries of data you or auto-capture entered. They are not financial, investment, tax, accounting or legal advice, and they are not a recommendation to take or avoid any course of action. Decisions you make on the basis of them are yours alone. Consult a qualified professional where you need advice.</p>
+  </section>
+
+  <section class="card">
+    <h2>7. Your data is your responsibility</h2>
+    <p>Your ledger is stored only on your device. We hold no copy of it.</p>
+    <div class="warn">
+      <p style="margin:0"><strong>If you uninstall the app, clear its storage, lose the device or reset it, your data is gone permanently — and we cannot recover it.</strong> The app provides a backup and an export precisely for this reason. Using them is up to you.</p>
+    </div>
+    <p>If you choose to back up to a cloud account, that copy is governed by that provider’s terms and by your own account security. You are responsible for keeping your app-lock PIN and your device secure. If you forget your PIN and have set no rescue question, we cannot restore access.</p>
+  </section>
+
+  <section class="card">
+    <h2>8. Advertising and cost</h2>
+    <p>The app is currently provided free of charge and is funded by advertising served through Google AdMob. By using it you accept that ads will be displayed, including banner ads and occasional full-screen ads.</p>
+    <p>We may change how the app is funded — including introducing paid features or an ad-free option — at any time. Any such change will be communicated in the app or in the Play Store listing before it takes effect.</p>
+  </section>
+
+  <section class="card">
+    <h2>9. Third-party services</h2>
+    <p>The app relies on services operated by Google, including Google Play services, AdMob, Firebase and, if you use the backup feature, Google Drive. Your use of those services is governed by their own terms and privacy policies. We are not responsible for their availability, content or conduct.</p>
+    <p>Merchant logos may be retrieved from a public icon service and brand names and logos shown in the app remain the property of their respective owners. Their appearance does not imply any affiliation with, or endorsement by, those brands.</p>
+  </section>
+
+  <section class="card">
+    <h2>10. Intellectual property</h2>
+    <p>The app, its design, name, logo and content are owned by us and protected by intellectual property law. These Terms grant you a licence to use the app; they transfer no ownership. The data you enter remains yours.</p>
+  </section>
+
+  <section class="card">
+    <h2>11. Availability and changes to the app</h2>
+    <p>We may add, change, suspend or discontinue features, or the app as a whole, at any time. We may also stop supporting older Android versions or app versions. We are not obliged to maintain backwards compatibility, and we do not guarantee uninterrupted availability.</p>
+    <p>Some app behaviour depends on your device: manufacturer battery restrictions can stop background capture, and revoking notification access disables it entirely.</p>
+  </section>
+
+  <section class="card">
+    <h2>12. Disclaimer of warranties</h2>
+    <p>To the fullest extent permitted by law, the app is provided <strong>“as is” and “as available”, without warranty of any kind</strong>, express or implied, including any implied warranty of merchantability, fitness for a particular purpose, accuracy or non-infringement.</p>
+    <p>We do not warrant that the app will be error-free, that capture will be complete or accurate, or that defects will be corrected.</p>
+  </section>
+
+  <section class="card">
+    <h2>13. Limitation of liability</h2>
+    <p>To the fullest extent permitted by law, we will not be liable for any indirect, incidental, special, consequential or punitive damages, or for any loss of data, profits, revenue or goodwill, arising out of or relating to your use of the app — including any decision made on the basis of figures it displays, any transaction it missed, duplicated or misread, and any loss of data stored on your device.</p>
+    <p>Where liability cannot be excluded, our total aggregate liability is limited to the greater of the amount you paid us for the app in the twelve months before the claim (which, for a free app, is zero) or the minimum amount permitted by applicable law.</p>
+    <div class="note">
+      <p style="margin:0"><strong>Consumers:</strong> nothing in these Terms limits or excludes liability for death or personal injury caused by negligence, for fraud, or for anything else that cannot lawfully be limited. If you are a consumer in the European Economic Area, the United Kingdom or another jurisdiction with mandatory consumer protection law, you keep all rights that law gives you, and those rights are not affected by these Terms.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>14. Termination</h2>
+    <p>You may stop using the app at any time by uninstalling it, which also deletes the data it holds. We may suspend or terminate your licence if you materially breach these Terms. Sections that by their nature should survive — including intellectual property, disclaimers, limitation of liability and governing law — survive termination.</p>
+  </section>
+
+  <section class="card">
+    <h2>15. Governing law</h2>
+    <p>These Terms are governed by the laws of <strong>India</strong>, without regard to conflict-of-law rules, and the courts of India shall have jurisdiction over any dispute.</p>
+    <p>If you are a consumer resident in the European Economic Area, the United Kingdom or another jurisdiction whose law entitles you to the protection of your local courts and mandatory local law, nothing in this section deprives you of that protection.</p>
+  </section>
+
+  <section class="card">
+    <h2>16. Changes to these terms</h2>
+    <p>We may update these Terms as the app evolves. The “Last updated” date above will reflect the current version, and material changes will be announced in the app or in the Play Store listing. Continuing to use AutoTally after an update means you accept the revised Terms.</p>
+  </section>
+
+  <section class="card">
+    <h2>17. Contact</h2>
+    <p>Questions about these Terms:</p>
+    <p><strong>XypherLabs</strong><br>
+    <a href="mailto:xypherlabs.dev@gmail.com">xypherlabs.dev@gmail.com</a></p>
+  </section>
+
+</main>
+
+<footer>
+  AutoTally · <a href="privacy-policy.html">Privacy Policy</a> · © 2026 XypherLabs
+</footer>
+
+</body>
+</html>
